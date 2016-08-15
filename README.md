@@ -2,7 +2,9 @@
 Personal Capital Search Box Exercise -
 Responsive page with a searchbox that displays matching suggestions on text input
 
-Steps to run the code (with Node) :
+This is a simple JQuery based solution. 
+
+Steps to run the code (with Node)
 1. Clone this repo
 2. Run - npm install
 3. Run - http-server 3000
