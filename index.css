@@ -11,14 +11,18 @@
 }
 
 .search-box {
-  box-sizing: border-box;
-  width: 100%;
-  border: 3px solid lightblue;
-  padding: 10px;
-  height: 40px;
-  outline: none;
-  font-size: large;
-  background:lightgray;
+    box-sizing: border-box;
+    width: 100%;
+    border: 3px solid lightblue;
+    padding: 10px;
+    height: 40px;
+    outline: none;
+    font-size: large;
+    background-image: url(assets/search.png);
+    background-size:     30px 30px;
+    background-repeat:   no-repeat;
+    background-position: 4px 3px; 
+    padding-left:40px;
 }
 
 .suggestions-list{
@@ -28,18 +32,26 @@
     border: 1px lightgray solid;
 }
 
-.suggestions-item {
+.suggestions-item, .suggestions-nomatch{
     display: none;
     font-size: large;
     padding: 5px 10px;
     font-family: sans-serif;
 }
 
+.suggestions-item {
+    background-image: url(assets/search.png);
+    background-size:     30px 30px;
+    background-repeat:   no-repeat;
+    background-position: 5px 5px; 
+    padding-left:40px;
+}
+
 .highlighted{
     background-color: lightblue;
 }
 
-.suggestion-text {
+.suggestions-text{
     overflow: hidden;
     white-space:nowrap;
     text-overflow:ellipsis;
@@ -47,7 +59,7 @@
     display:inline-block;
 }
 
-.suggestion-category {
+.suggestions-category {
     color: blue;
     font-size: xx-small;
     font-style: italic;
